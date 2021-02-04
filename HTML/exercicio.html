@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, ini tial-scale=1.0">
+    <title>1º Pag</title>   
+    <style>
+        div#msg {
+
+            font: normal 20pt Arial;
+            background: rgb(73, 202, 105);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style> 
+</head>
+<body>
+   <h1>E aí gurizada</a> 
+    <p>befbwiebfiwuebfiwebfwf wefwnefow</p>
+    <p>efbiwuefwebfi <strong>iaubifweubfwe</strong> jefwjbfkwef<br/></p>
+    <div id="msg"    >
+        Inter
+    </div>
+
+
+<script>    
+    /*var num1 = Number(prompt('Insira o 1º numero '));
+    var num2 = Number(prompt('Insira o 2º numero'));
+    var res1 = num1 + num2;
+    alert('O resultado é: ' + res1); 
+    querySelector ('div#msg')  . para class e # para ID
+    TagName ID Name ClassName 
+    
+    var p1 = document.getElementsByTagName('p')[0];
+    var d1 = document.getElementById('msg');
+    document.write(d1.innerText);*/
+    var letreiro = document.getElementById('msg');
+    letreiro.addEventListener('mouseover', entrou);
+    letreiro.addEventListener('mouseout', saiu);
+    letreiro.addEventListener('click', clicar);
+
+    function clicar(){
+
+        var letreiro = document.getElementById('msg');
+        letreiro.innerText = 'Clicou!';
+        letreiro.style.background = 'red';
+
+    }
+    function entrou(){
+
+        var letreiro = document.getElementById('msg');
+        letreiro.innerText = 'entrou!';
+        letreiro.style.background =  'green';
+
+    }
+    function saiu(){
+
+        var letreiro = document.getElementById('msg');
+        letreiro.innerText = 'saiu!';
+        letreiro.style.background = 'green' ;
+
+    }
+    
+    
+</script>
+
+</body>
+</html>

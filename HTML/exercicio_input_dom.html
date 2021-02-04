@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, ini tial-scale=1.0">
+    <title>1º Pag</title>   
+    <style>
+        
+    </style> 
+</head>
+<body>   
+    <div id="msg" >
+        Soma de valores
+        <input type="number" name="txtn1" id="txtn1">
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="Somar" onclick="somar()">
+
+        <p></p>
+
+    </div>
+
+
+<script>    
+    /*var num1 = Number(prompt('Insira o 1º numero '));
+    var num2 = Number(prompt('Insira o 2º numero'));
+    var res1 = num1 + num2;
+    alert('O resultado é: ' + res1); 
+    querySelector ('div#msg')  . para class e # para ID
+    TagName ID Name ClassName 
+    
+    var p1 = document.getElementsByTagName('p')[0];
+    var d1 = document.getElementById('msg');
+    document.write(d1.innerText);
+    var letreiro = document.getElementById('msg');
+    letreiro.addEventListener('mouseover', entrou);
+    letreiro.addEventListener('mouseout', saiu);
+    letreiro.addEventListener('click', clicar);
+
+    function clicar(){
+
+        var letreiro = document.getElementById('msg');
+        letreiro.innerText = 'Clicou!';
+        letreiro.style.background = 'red';
+
+    }
+    function entrou(){
+
+        var letreiro = document.getElementById('msg');
+        letreiro.innerText = 'entrou!';
+        letreiro.style.background =  'green';
+
+    }
+    function saiu(){
+
+        var letreiro = document.getElementById('msg');
+        letreiro.innerText = 'saiu!';
+        letreiro.style.background = 'green' ;
+
+    }*/
+    
+    function somar(){
+        var tn1 = document.getElementById('txtn1');
+        var tn2 = document.getElementById('txtn2');
+        var tn3 = document.getElementsByTagName('p')[0];
+        var n1 = Number(tn1.value);
+        var n2 = Number(tn2.value);
+        var res = n1 + n2;
+        tn3.innerText = `O resultado é  ${res}`;
+
+
+
+    }
+    
+    
+</script>
+
+</body>
+</html>
